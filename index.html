@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>What's your grade??!?!</title>
+    <style>
+      html {
+        text-align: center;
+        background-color: black;
+        color: white;
+        font-family: monospace;
+      }
+      
+      h1 {
+        font-size: 50px;
+      }
+    </style>
+    </head>
+    <body>
+      <h1>What's your grade?!</h1>
+      <button onClick="grade()">Find out now!</button>
+        <script type="text/javascript">
+          function grade() {
+            min = Math.ceil(0);
+            max = Math.floor(100);
+            document.write(Math.floor(Math.random() * (max - min + 1)) + min); //The maximum is inclusive and the minimum is inclusive 
+          }
+        <script>
+      </body>
+ </html>
+          
+        
