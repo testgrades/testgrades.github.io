@@ -23,7 +23,8 @@
           function grade() {
             min = Math.ceil(0);
             max = Math.floor(100);
-            document.getElementById('grade').innerHTML += Math.floor(Math.random() * (max - min + 1)) + min.style.color = "white";
+            document.getElementById('grade').style.color = "white";
+            document.getElementById('grade').innerHTML += Math.floor(Math.random() * (max - min + 1)) + min;
         </script>
       </body>
  </html>
