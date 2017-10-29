@@ -18,12 +18,12 @@
     <body>
       <h1>What's your grade?!</h1>
       <button onClick="grade()">Find out now!</button>
+      <dib id="grade"></div>
         <script type="text/javascript">
           function grade() {
             min = Math.ceil(0);
             max = Math.floor(100);
-            document.write(Math.floor(Math.random() * (max - min + 1)) + min); //The maximum is inclusive and the minimum is inclusive 
-          }
+            document.getElementById('grade').innerHTML += Math.floor(Math.random() * (max - min + 1)) + min;
         </script>
       </body>
  </html>
